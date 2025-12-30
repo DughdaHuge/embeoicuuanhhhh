@@ -265,7 +265,7 @@ canvas.addEventListener("touchend", (e) => {
 const dialogues = [
     { text: "“Ô yayyyy em bé tới cứu anh neee, anh yêu emmmmm💕”", img: "shoulderLevel.png" },
     { text: "“Ô tr oi sao giờ bé mới tới. huhu. anh nhớ em 😘”", img: "shoulderLevel.png" },
-    { text: "“Chơm chơm ne, ôm ôm ne, anh yêu em bé của anh nhiu lắm ạaaaaaaaa 💖”", img: "kissing.png" } // <- new picture here
+    { text: "“Chơm chơm ne, ôm ôm ne, anh yêu em bé của anh nhiu lắm ạaaaaaaaa 💖”", img: "shoulderLevel.png" } // <- new picture here
 ];
 
 let dialogueIndex = 0;
@@ -286,3 +286,4 @@ nextBtn.addEventListener("click", () => {
 });
 
 });
+
