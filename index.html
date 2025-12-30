@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <!-- Background thumbnail -->
+    <img src="haha.jpg" alt="Background" class="thumbnail-bg">
+
+    <!-- Overlay content -->
+    <div class="overlay">
+      <!-- Cute gif -->
+      <img src="cat.gif" alt="Cute Gif" id="start-gif">
+
+      <!-- Heading + text -->
+      <h1>Em bé oiiiiii<br><span class="highlight">Em oiiiii!</span></h1>
+      <p class="subtitle">Em có mún chơi game hongggg??</p>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button id="yes-btn">Dạ cóooo, em yêu anhhh, em mún chơiiii</button>
+        <button id="no-btn">Hongg, em hong mún chơi!!!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info Screen -->
+  <div id="info-screen" class="hidden">
+    <img src="haha.jpg" alt="Background" class="thumbnail-bg">
+
+    <div class="overlay">
+      <!-- Cute gif on top -->
+      <img src="hehe.gif" alt="Cute Gif" id="info-gif">
+
+      <h1>Game Details 💕</h1>
+      <p class="subtitle">
+        Em bé sẽ chơi một game mê cung cute 💖<br>
+        Vượt qua mê cung để giải cứu anh nhe!
+      </p>
+      <p class="subtitle">
+        <strong>Phần thưởng:</strong> Hun một cái nhe 😘
+      </p>
+      <p class="subtitle">
+        <strong>Chơi như nào:</strong><br>
+        Dùng phím mũi tên hoặc là vuốt để di chuyển nhe, nhớ là phải cứu anh chớ hong có đi lung tung nhe💕
+      </p>
+      <div class="buttons">
+        <button id="start-game-btn">Chơi thuiii 💖</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Game Container -->
+  <div id="game-container">
+    <!-- Animated Background -->
+    <div id="romantic-background">
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+
+    <canvas id="mazeCanvas"></canvas>
+
+    <!-- Mobile Controls -->
+    <div id="controls">
+      <button data-dir="up">⬆️</button>
+      <div class="middle">
+        <button data-dir="left">⬅️</button>
+        <button data-dir="down">⬇️</button>
+        <button data-dir="right">➡️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Win Message -->
+  <div id="win-message" class="hidden">
+    <div class="chat-box">
+      <img src="shoulderLevel.png" alt="Player" class="char-img" id="chat-img">
+      <div class="chat-text">
+        <p class="name">Dũng ❤️</p>
+        <p id="dialogue" class="dialogue">“Yay! You did it so easy huh 💕”</p>
+      </div>
+    </div>
+
+    <button id="next-btn">Next ➡️</button>
+    <button id="restart-btn" onclick="location.reload()" class="hidden">Play Again ❤️</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
